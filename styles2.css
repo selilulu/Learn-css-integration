@@ -1,0 +1,23 @@
+.card{
+    background-color: rgb(8, 8, 184);
+    box-shadow: chartreuse;
+    width: 400px;
+    height: 520px;
+}
+
+.container{
+    padding:5px 10px;
+}
+
+.users,.span,.page,.grid,.footer{
+    color: rgb(237, 241, 212);
+}
+
+.grid{
+padding-top: 60px;
+}
+
+.wrap{
+    display: grid;
+    justify-items:end;
+}
