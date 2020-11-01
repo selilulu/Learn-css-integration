@@ -1,10 +1,8 @@
 .card{
-    background-color: rgb(8, 8, 184);
-    box-shadow: chartreuse;
+    background-color: rgba(8, 117, 241, 0.781);
     width: 400px;
-    height: 520px;
+    height: 550px;
 }
-
 .container{
     padding:5px 10px;
 }
@@ -14,10 +12,23 @@
 }
 
 .grid{
-padding-top: 60px;
+padding-top: 20px;
 }
 
 .wrap{
     display: grid;
     justify-items:end;
 }
+
+.table {
+    border-collapse:separate;
+    border-spacing: 30px 0;
+  }
+  
+
+
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid rgb(155, 153, 153);
+  }
+  
