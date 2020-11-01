@@ -1,63 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
-    margin:0;
+  margin-top: 10px;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.column{
+
+background-color:white;
+justify-items: center ;
+display: grid;
+padding:5px;
+
+}
 
 h4{
-    color: mediumseagreen;
-    text-align: left;
+color: mediumseagreen;
+text-align: left;
 }
 
 p{
 color:grey;
 text-align:left;
 }
-.grid { 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 2px;
-    align-items: center;
-    
-    }
-/* Float four columns side by side */
-.column {
-  float:left;
-  width: 25%;
-  padding: 0px 10px;
-}
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    display:grid;
-    margin-bottom: 20px;
-    grid-template-columns:25% 25% 25% 25%;
-    grid-gap:1px;
-    padding:10px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding:16px;
-  text-align: center;
-  background-color: white;
+.grid-container {
   
+  background-color:white;
+  justify-items:center;
+  margin-left: 120px;
+  display: grid;
+  grid-template-columns:200px 200px 200px 200px ;
+
 }
 
- 
 
+
+@media only screen and (max-width:724px){
+.grid-container{
+  display: flex;
+  flex-direction:column;
+}
+}
+
+@media only screen and (min-width:724px){
+  .grid-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+}
