@@ -9,9 +9,13 @@ body {
 .column{
 
 background-color:white;
-justify-items: center ;
-display: grid;
 padding:5px;
+max-width: 300px;
+
+}
+
+.image {
+  height:100px;
 
 }
 
@@ -25,15 +29,31 @@ color:grey;
 text-align:left;
 }
 
+.code{
+  font-family: monospace;
+  font-size: 120% ;
+
+}
+
+img{
+  display:block;
+  margin:0 auto;
+
+
+}
+
 .grid-container {
   
   background-color:white;
   justify-items:center;
-  margin-left: 120px;
   display: grid;
-  grid-template-columns:200px 200px 200px 200px ;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  max-width: 1000px;
+  margin:0 auto;
+
 
 }
+
 
 
 
